@@ -1,3 +1,5 @@
+@import "variaveis.scss";
+
 body {
     font-size: 20px;
 }
@@ -13,18 +15,19 @@ body {
 
 .azul {    
     @extend .box; // Herança de seletor (Herda as propriedades da classe informada)
-    color: #000080;
+    $azul: #000080 !default; // Recebe o valor da variavel azul, se ela não existir recebe a cor setada como padrão, se remover o default a cor informada irá sobreescrever a cor da variável
+    color: $azul; 
     border-color: blue;
 }
 
 .vermelho {    
     @extend .box; // Herança de seletor
-    color: darkred;
+    color: $vermelho;
     border-color: red;
 }
 
 .laranja {    
     @extend .box; // Herança de seletor
-    color: orangered;
+    color: $laranja;
     border-color: orangered;
 }
