@@ -1,4 +1,9 @@
-@import "variaveis.scss";
+@import "variaveis";
+@import "functions";
+
+@function fixBorder($cor) {
+    @return desaturate(darken($cor, 25%), 50%);
+}
 
 body {
     font-size: 20px;
@@ -19,7 +24,7 @@ body {
     @extend .box; // Herança de seletor (Herda as propriedades da classe informada)
     // $azul: #0101bb !default; // Recebe o valor da variavel azul, se ela não existir recebe a cor setada como padrão, se remover o default a cor informada irá sobreescrever a cor da variável
     color: white;
-    border-color: darken($azul, 90%);
+    border-color: fixBorder($azul);
     // border-color: desaturate($azul, 50%);
 }
 
