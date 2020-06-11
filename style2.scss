@@ -12,19 +12,19 @@ body {
 }
 
 .azul {    
-    @extend .box;
+    @extend .box; // Herança de seletor (Herda as propriedades da classe informada)
     color: #000080;
     border-color: blue;
 }
 
 .vermelho {    
-    @extend .box;
+    @extend .box; // Herança de seletor
     color: darkred;
     border-color: red;
 }
 
 .laranja {    
-    @extend .box;
+    @extend .box; // Herança de seletor
     color: orangered;
     border-color: orangered;
 }
