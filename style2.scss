@@ -5,9 +5,11 @@ body {
 }
 
 .box {
-    border: 1px solid;
+    border: 5px solid;
     padding: 20px;
     margin: 20px auto;
+    color: gray;   
+    background-color: $azul;
     em {
         font-weight: bold;
     }
@@ -15,9 +17,10 @@ body {
 
 .azul {    
     @extend .box; // Herança de seletor (Herda as propriedades da classe informada)
-    $azul: #000080 !default; // Recebe o valor da variavel azul, se ela não existir recebe a cor setada como padrão, se remover o default a cor informada irá sobreescrever a cor da variável
-    color: $azul; 
-    border-color: blue;
+    // $azul: #0101bb !default; // Recebe o valor da variavel azul, se ela não existir recebe a cor setada como padrão, se remover o default a cor informada irá sobreescrever a cor da variável
+    color: white;
+    border-color: darken($azul, 90%);
+    // border-color: desaturate($azul, 50%);
 }
 
 .vermelho {    

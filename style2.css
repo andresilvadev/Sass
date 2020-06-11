@@ -3,17 +3,19 @@ body {
 }
 
 .box, .laranja, .vermelho, .azul {
-  border: 1px solid;
+  border: 5px solid;
   padding: 20px;
   margin: 20px auto;
+  color: gray;
+  background-color: #000080;
 }
 .box em, .laranja em, .vermelho em, .azul em {
   font-weight: bold;
 }
 
 .azul {
-  color: #000080;
-  border-color: blue;
+  color: white;
+  border-color: black;
 }
 
 .vermelho {
