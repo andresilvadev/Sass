@@ -1,0 +1,35 @@
+body {
+    font: Verdana, Arial, sans-serif;
+}
+
+p {
+    font-size: 18px;
+
+    a {
+        color: red;
+
+        &:hover {
+            text-decoration: none
+        }
+    }
+
+}
+
+#paragrafo {
+    color: green;
+}
+
+
+/* NUNCA FAÇA ISSO */
+/* Encadeamento com mais de 3 níveis */
+html {
+    body {
+        div {
+            p {
+                a {
+                    color: blue;
+                }
+            }
+        }
+    }
+}

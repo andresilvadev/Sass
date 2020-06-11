@@ -1,0 +1,26 @@
+@charset "UTF-8";
+body {
+  font: Verdana, Arial, sans-serif;
+}
+
+p {
+  font-size: 18px;
+}
+p a {
+  color: red;
+}
+p a:hover {
+  text-decoration: none;
+}
+
+#paragrafo {
+  color: green;
+}
+
+/* NUNCA FAÇA ISSO */
+/* Encadeamento com mais de 3 níveis */
+html body div p a {
+  color: blue;
+}
+
+/*# sourceMappingURL=style.css.map */
