@@ -22,7 +22,12 @@ $default-text-shadow-v-offset: 2px;
     height: 200px;
     margin: 0 auto;
     background: green;
+    // background-image: url('../images/background/bg-spacex.jpg'); // Modelo normal
+    background-image: image-url('background/bg-spacex.jpg');        // Modelo compass
+    background-size: cover;
+
     @include transition;
+    
     &:hover {
         background: blue;
         $default-text-shadow-blur: 100px;
