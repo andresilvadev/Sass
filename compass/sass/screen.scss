@@ -14,3 +14,18 @@ $default-text-shadow-v-offset: 2px;
    @include single-text-shadow;
    font-size: 24px;
 }
+
+.box {
+    border: 1px solid red;
+    display: block;
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    background: green;
+    @include transition;
+    &:hover {
+        background: blue;
+        $default-text-shadow-blur: 100px;
+        @include single-box-shadow;
+    }
+}
