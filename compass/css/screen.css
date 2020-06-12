@@ -67,13 +67,60 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   display: block;
 }
 
-/* line 13, ../sass/screen.scss */
+/* line 72, icons/*.png */
+.icons-sprite, .icons-icon-download-2, .icons-icon-download, .icons-upload-de-arquivo {
+  background-image: url('../images/icons-sc7f05c5205.png');
+  background-repeat: no-repeat;
+}
+
+/* line 84, ../../../../../../Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-icon-download-2 {
+  background-position: 0 0;
+}
+
+/* line 84, ../../../../../../Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-icon-download {
+  background-position: 0 -512px;
+}
+
+/* line 84, ../../../../../../Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-upload-de-arquivo {
+  background-position: 0 -1024px;
+}
+/* line 59, ../../../../../../Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-upload-de-arquivo:hover, .icons-upload-de-arquivo.upload-de-arquivo-hover {
+  background-position: 0 -1280px;
+}
+
+/* line 16, ../sass/screen.scss */
 .sombra {
   text-shadow: 0px 2px 5px rgba(255, 0, 0, 0.6);
   font-size: 24px;
 }
 
-/* line 18, ../sass/screen.scss */
+/* line 21, ../sass/screen.scss */
+.icons-icon-download {
+  width: 512px;
+  height: 512px;
+}
+/* line 25, ../sass/screen.scss */
+.icons-icon-download:hover {
+  filter: hue-rotate(25deg);
+}
+
+/* line 33, ../sass/screen.scss */
+.icons-icon-download-2 {
+  width: 512px;
+  height: 512px;
+}
+
+/* line 38, ../sass/screen.scss */
+.icons-upload-de-arquivo {
+  width: 212px;
+  height: 212px;
+}
+
+/* line 43, ../sass/screen.scss */
 .box {
   border: 1px solid red;
   display: block;
@@ -88,7 +135,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   -webkit-transition: all 1s;
   transition: all 1s;
 }
-/* line 31, ../sass/screen.scss */
+/* line 56, ../sass/screen.scss */
 .box:hover {
   background: blue;
   -moz-box-shadow: 0px 5px #333333;

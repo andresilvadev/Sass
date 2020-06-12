@@ -10,9 +10,34 @@ $default-text-shadow-v-offset: 2px;
 @import "compass/reset";
 @import "compass/css3";
 
+@import "icons/*.png";     // O nome da pasta deve ser o mesmo nome da propriedade ex: all-nome_da_variavel_ou_pasta-sprites;
+@include all-icons-sprites;
+
 .sombra {
    @include single-text-shadow;
    font-size: 24px;
+}
+
+.icons-icon-download {
+    width: 512px;
+    height: 512px;
+
+    &:hover {
+        // filter: grayscale(50%);
+        // filter: blur(5px);
+        // filter: brightness(125%);
+        filter: hue-rotate(25deg);
+    }
+}
+
+.icons-icon-download-2 {
+    width: 512px;
+    height: 512px;
+}
+
+.icons-upload-de-arquivo {
+    width: 212px;
+    height: 212px;
 }
 
 .box {
